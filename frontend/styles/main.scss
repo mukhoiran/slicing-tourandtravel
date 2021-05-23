@@ -43,11 +43,12 @@ body {
   }
 }
 
+// ============================== Index ===================================
 // Header
 header {
   margin-top: -70px;
   padding: 180px 0 165px;
-  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url('../images/dubai-island.webp');
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url('../images/background.jpeg');
   background-size: cover;
 
   h1, p {
@@ -121,6 +122,7 @@ header {
   }
 }
 
+//Popular content
 .section-popular-content {
   .section-popular-travel {
     .card-travel {
@@ -155,6 +157,7 @@ header {
   }
 }
 
+// Networks
 .section-networks {
   background-color: #fff;
   margin-top: -170px;
@@ -176,6 +179,7 @@ header {
   }
 }
 
+//Testimonials
 .section-testimonial-heading {
   background: linear-gradient(#fff 0%, #f5f5f5 100%);
   padding-top: 50px;
@@ -253,8 +257,252 @@ header {
   }
 }
 
+//Footer
 .section-footer{
   a {
     color: #071C4D;
+  }
+}
+
+// ============================== Details ===================================
+.section-details-header {
+  min-height: 310px;
+  background: #e4e6eb;
+  margin-top: -68px;
+}
+
+.section-details-content {
+  margin-top: -210px;
+  min-height: 100vh;
+  .breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .breadcrumb-item {
+    &.active {
+      font-weight: bold;
+      color: #071C4D;
+    }
+  }
+
+  .gallery {
+    .xzoom-container {
+      display: block;
+      width: 100%;
+
+      .xzoom {
+        width: 100%;
+        box-shadow: none;
+        margin-bottom: 10px;
+      }
+
+      .xactive {
+        border: 4px solid #1ABC9C;
+        box-shadow: none;
+      }
+    }
+
+    .xzoom-thumbs {
+      .xzoom-gallery {
+        height: 86px;
+        width: auto;
+      }
+    }
+  }
+}
+
+.card-details {
+  padding: 30px;
+  border-radius: 11px;
+
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 18px;
+    color: #b1b1b1;
+  }
+
+  h3 {
+    font-weight: 300;
+    font-size: 14px;
+    color: #071C4D;
+  }
+
+  .members {
+    .member-image {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .trip-informations {
+    th {
+      font-weight: 300;
+      font-size: 18px;
+      color: #071C4D;
+    }
+
+    td {
+      font-weight: 300;
+      font-size: 18px;
+      color: #b1b1b1;
+    }
+
+    .text-blue {
+      color: #071C4D;
+      font-weight: bold;
+    }
+
+    .text-orange {
+      color: #FF9E53;
+      font-weight: bold;
+    }
+  }
+
+  .payment-instructions {
+    font-weight: 300;
+    font-size: 14px;
+    color: #b1b1b1;
+  }
+
+  .bank {
+    .bank-item {
+      h3 {
+        font-size: 18px;
+        color: #071C4D;
+        margin-bottom: 0;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+
+      .description {
+        margin-left: 10px;
+        overflow: hidden;
+        float: left;
+
+        p {
+          font-weight: normal;
+          font-size: 14px;
+          color: #071C4D;
+        }
+      }
+    }
+
+    .bank-image {
+      width: 45px;
+      height: 45px;
+      float: left;
+    }
+  }
+
+  .disclaimer {
+    font-weight: 300;
+    font-size: 14px;
+    color: #b1b1b1;
+  }
+
+  .gj-datepicker {
+    .datepicker {
+      border-right: 0;
+    }
+    .input-group-append {
+      .btn {
+        padding-right: 30px;
+      }
+    }
+  }
+
+  .btn-add-now {
+    background-color: #071C4D;
+    color: #fff;
+
+    &:hover {
+      background-color: #1B3B86;
+      color: #fff;
+    }
+  }
+}
+
+.card-right {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+
+.features {
+  margin-top: 20px;
+
+  h3 {
+    font-size: 18px;
+    color: #071C4D;
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .description {
+    margin-left: 10px;
+    overflow: hidden;
+    float: left;
+  }
+
+  .features-image {
+    width: 45px;
+    height: 45px;
+    float: left;
+  }
+}
+
+.join-containers {
+  margin-top: -16px;
+}
+
+.btn-join-now {
+  background-color: #FF9E53;
+  color: #fff;
+  border-radius: 0;
+
+  &:hover {
+    background-color: #FFB57C;
+    color: #fff;
+  }
+}
+
+.section-success {
+  height: 90vh;
+
+  h1 {
+    font-weight: 600;
+    font-size: 26px;
+    color: #071C4D;
+  }
+
+  p{
+    font-weight: 500px;
+    font-size: 18px;
+    color: #b1b1b1;
+  }
+
+  .btn-home-page {
+    border-radius: 4px;
+    background-color: #071C4D;
+    color: #fff;
+
+    &:hover {
+      background-color:#2A488E;
+      color: #fff;
+    }
   }
 }
